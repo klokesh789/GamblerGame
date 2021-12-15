@@ -43,6 +43,12 @@ public class GamblerGame {
 				 int amountLostPerDay = STAKE_AMOUNT - cashInHand;
 				 System.out.println("Player lost day"+i+" RS "+amountLostPerDay);
 			 }
+			 if(cashInHand == 150) {
+				 System.out.println("Day"+i+" is gamblers Luckiest day as he won maximum amount "+cashInHand+" RS");
+			 }
+			 else if (cashInHand == 50) {
+				 System.out.println("Day"+i+" is gamblers Unluckiest day as he lost maximum amount "+cashInHand+" RS");
+			 }
 			 TOTAL_AMOUNT = TOTAL_AMOUNT + cashInHand;
 			 }
 		System.out.println("Total amount player has after 20 days as per day included = "+TOTAL_AMOUNT+" $");	 
@@ -51,7 +57,7 @@ public class GamblerGame {
 			 System.out.println("Total cash gambler won "+TOTAL_AMOUNT_IN_MONTH+" $");
 		 }
 		 else {
-			 System.out.println("Total cash gambler lost in that month "+TOTAL_AMOUNT_IN_MONTH+" $");
+			 System.out.println("Total cash gambler lost  "+TOTAL_AMOUNT_IN_MONTH+" $");
 		 }
 	}    
 }
