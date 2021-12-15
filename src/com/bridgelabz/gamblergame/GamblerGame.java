@@ -27,6 +27,10 @@ public class GamblerGame {
 		 else {
 			 System.out.println("Player lost the first play");
 		 }
+		 if(cashInHand==150 || cashInHand==50) {
+			 System.out.println("Player would like to resign for current day");
+			 
+		 }
 
 
 	}
