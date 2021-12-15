@@ -9,6 +9,7 @@ public class GamblerGame {
 	static int TOTAL_AMOUNT_IN_MONTH=0;
 	public static void main(String[] args) {
 		int play = (int) Math.floor(Math.random() * 10) % 2;
+		boolean label = true;
 		 System.out.println("Gamblers play:"+play);
 		 for (int i = 1; i <= 20; i++) {
 			 int cashInHand = STAKE_AMOUNT;
@@ -58,6 +59,18 @@ public class GamblerGame {
 		 }
 		 else {
 			 System.out.println("Total cash gambler lost  "+TOTAL_AMOUNT_IN_MONTH+" $");
+			 if(TOTAL_AMOUNT_IN_MONTH > 0) {
+				 System.out.println("Do you want to continue playing for next month");
+				 System.out.println("If you want to continue playing type '1'");
+				 System.out.println("if you want stop gambling type '2'");
+				 int y = 0;
+				 if( y== 1) {
+					 label = true;
+				 }
+				 else {
+					 label = false;
+				 }
+			 }
 		 }
 	}    
 }
